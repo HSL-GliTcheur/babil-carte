@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-style: normal;
+    color: white;
+}
+
+.fond {
+    display: flex;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: -100;
+}
+
+.fond-2 {
+    display: flex;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: -100;
+}
+
+@media screen and (max-width: 600px) {
+    .fond {
+        display: none;
+    }
+
+    .fond-2 {
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .fond {
+        display: flex;
+    }
+
+    .fond-2 {
+        display: none;
+    }
+}
+
+
+/* ----------------  fond d'écran  ---------------- */
+
+.title {
+    font-size: 50px;
+    font-family: 'Mochiy Pop One', sans-serif;
+    color: white;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    .title {
+        font-size: 30px;
+    }
+}
+
+.selection {
+    margin-top: 15vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.carre {
+    width: 30vw;
+    height: 23vh;
+    border: 1.5px solid white;
+    border-radius: 20px;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 2%;
+}
+
+@media screen and (max-width: 725px) {
+    .selection {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .carre {
+        min-width: 50vw;
+        height: 30vh;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .selection {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .carre {
+        min-width: 70vw;
+        height: 30vh;
+        margin-left: 0;
+        margin-bottom: 2%;
+    }
+}
+
+@media screen and (max-width: 424px) {
+    .carre {
+        min-width: 280px;
+        height: 30vh;
+    }
+}
+
+@media screen and (max-height: 660px) {
+    .carre {
+        height: 35vh;
+    }
+}
+
+.carre img {
+    display: flex;
+    margin: auto;
+    /*         taille         */
+    width: auto;
+    height: 90%;
+    max-height: 90%;
+    max-width: 100%;
+
+    border-radius: 20px;
+}
